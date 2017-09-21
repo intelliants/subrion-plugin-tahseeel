@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module type="plugin" name="tahseeel">
+    <title>Tahseeel</title>
+    <summary>Tahseeel payment gateway integration. Allows to accept payments using Tahseeel</summary>
+    <author>Intelliants LLC</author>
+    <contributor>Intelliants LLC</contributor>
+    <version>1.0.0</version>
+    <date>2017-09-21</date>
+    <category>payments</category>
+    <compatibility>4.1.0</compatibility>
+
+    <config group="financial" name="tahseeel" type="divider">Tahseeel</config>
+    <config group="financial" name="tahseeel_username" type="text" description="Tahseeel Username">Test123456</config>
+    <config group="financial" name="tahseeel_secret" type="text" description="Tahseeel Secret Key">Test123456</config>
+    <config group="financial" name="tahseeel_password" type="text" description="Tahseeel Password">Test123456</config>
+    <config group="financial" name="tahseeel_knet" type="radio" description="Accept from KNET" values="0,1">1</config>
+    <config group="financial" name="tahseeel_cc" type="radio" description="Accept from Credit Card" values="0,1">1</config>
+
+    <phrases>
+        <phrase category="frontend" key="tahseeel_payment_cancelled">Payment is cancelled by user</phrase>
+    </phrases>
+
+    <hooks>
+        <hook name="paymentButtons" type="smarty" filename="button" page_type="front"><![CDATA[]]></hook>
+    </hooks>
+</module>
