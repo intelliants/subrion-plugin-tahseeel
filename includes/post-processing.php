@@ -24,7 +24,7 @@
  *
  ******************************************************************************/
 
-$iaTap = $iaCore->factoryPlugin('tap', 'common');
+$iaTahseeel = $iaCore->factoryPlugin('tahseeel', 'common');
 
 if (isset($_GET['cancelled'], $_GET['hash'], $_GET['inv_id'])) {
     $result = $iaTahseeel->getOrderInfo($_GET['hash'], $_GET['inv_id']);
